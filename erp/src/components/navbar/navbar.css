@@ -1,0 +1,63 @@
+.navbar {
+    background-color: #222; /* Darker background */
+    color: #fff; /* White text */
+    display: flex; /* Allow horizontal layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align vertically */
+    padding: 1rem 2rem; /* Add some padding */
+    position: fixed; /* Fix navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make navbar full width */
+    z-index: 10; /* Ensure navbar stays above content */
+  }
+  
+  .container {
+    display: flex; /* Maintain container flexibility for links */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjust brand size slightly */
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-right: 1.5rem; /* Increase spacing between links */
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out; /* Add hover effect transition */
+  }
+  
+  .navbar-link:hover {
+    color: #ddd; /* Change link color on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: flex-start; /* Align to top left */
+    }
+  
+    .container {
+      flex-direction: column; /* Maintain vertical layout for links */
+    }
+  
+    .navbar-brand {
+      margin-bottom: 1rem; /* Add space between brand and links */
+    }
+  
+    .navbar-menu {
+      margin-top: 0; /* Remove extra margin on small screens */
+    }
+  }
+  
